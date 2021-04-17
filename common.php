@@ -899,6 +899,7 @@ function adminform($name = '', $pass = '', $path = '')
 </body>';
     $html .= '
 <script>
+    console.log("111111111111111111");
     function md5pass(f) {
         return true;
         var timestamp = new Date().getTime();
