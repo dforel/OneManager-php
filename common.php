@@ -163,6 +163,7 @@ function main($path)
         } else {
             $url = path_format($_SERVER['PHP_SELF'] . '/');
         }
+        error_log1($_POST['password1'].getConfig('admin'));
         if ($_POST['password1']==getConfig('admin')) {
             return adminform('admin', pass2cookie('admin', $_POST['password1']), $url);
         } else return adminform();
